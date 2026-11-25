@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Healtheon</title>
+<meta name="robots" content="noindex">
+<script>
+  // Any unknown address on this site goes back to the home page.
+  (function () {
+    var parts = location.pathname.split('/').filter(Boolean);
+    // Project sites live under /<repo-name>/, user sites at the root.
+    var base = location.hostname.endsWith('github.io') && parts.length ? '/' + parts[0] + '/' : '/';
+    location.replace(base);
+  })();
+</script>
+<style>body{margin:0;display:grid;place-items:center;min-height:100vh;font-family:system-ui,sans-serif;background:#F6F4EF;color:#0A1A2B}a{color:#2560CD}</style>
+</head>
+<body>
+<p>Page not found. <a href="./">Go to the Healtheon home page</a>.</p>
+</body>
+</html>
