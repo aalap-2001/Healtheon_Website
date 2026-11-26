@@ -284,6 +284,9 @@ section{position:relative}
 .arch-progress button i{position:absolute;inset:1.5px;border-radius:50%;background:#fff;transform:scale(0);transition:transform .4s var(--ease)}
 .arch-progress button.on i{transform:scale(1)}
 .arch-progress button.on{border-color:#fff}
+.arch-scroll{display:flex;align-items:center;gap:16px;margin-top:32px;color:rgba(255,255,255,.6);font-size:13px}
+.arch-bar{flex:1;max-width:220px;height:3px;border-radius:3px;background:rgba(255,255,255,.14);overflow:hidden}
+.arch-bar b{display:block;height:100%;background:#fff;border-radius:3px;transform-origin:left;transform:scaleX(0)}
 .arch-legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:28px;font-size:13px;color:#93A5B8}
 .arch-legend span{display:flex;align-items:center;gap:8px}
 .arch-legend i{width:8px;height:8px;border-radius:50%}
@@ -526,6 +529,7 @@ footer{background:#06101A;color:#C9D4E0;padding:clamp(72px,9vw,120px) 0 32px;mar
   .arch-steps{margin-top:16px;min-height:150px}
   .arch-step h3{margin:10px 0 6px}
   .arch-step p{font-size:15px}
+  .arch-scroll{margin-top:20px}
   .arch-progress{display:flex;gap:10px;margin-top:28px;align-items:center}
   .arch-scene{height:auto;min-height:0}
   .stack{width:min(260px,58vw);height:min(260px,58vw);margin-top:0}
@@ -1087,6 +1091,7 @@ footer a[href^="http"]:not(.btn):hover{color:#9DBBF4 !important}
         <div class="arch-step"><h3>People approve what goes out</h3><p>Claim, prior authorization and appeal submissions require explicit approval. Anything outside your limits stops and waits for a person.</p></div>
         <div class="arch-step"><h3>Every decision is recorded</h3><p>Each action is saved with the rule it followed, the evidence it used and the person who approved it. Leaders can review it by payer, stage and team.</p></div>
       </div>
+      <div class="arch-scroll" aria-hidden="true"><span class="scroll-cue mono"><i></i>Scroll to explore</span><span class="arch-bar"><b id="archBar"></b></span></div>
     </div>
     <div class="arch-scene" id="archScene">
       <canvas class="particles" id="archParticles" aria-hidden="true"></canvas>
@@ -2808,8 +2813,9 @@ window.__AV={"eva": {"po": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2
   const layers = $$('.layer', stack), steps = $$('.arch-step'), labels = $$('.arch-label');
   const N = layers.length; let archActive = -1, archP = 0;
   const layerZ = (i, p) => { const m = innerWidth <= 900; return (i - (N - 1) / 2) * (m ? 40 + p * 12 : 84 + p * 30); };
+  const archBar = $('#archBar');
   const setArch = p => {
-    archP = p; const idx = Math.min(N - 1, Math.floor(p * N * 0.999));
+    archP = p; if (archBar) archBar.style.transform = `scaleX(${Math.max(0, Math.min(1, p))})`; const idx = Math.min(N - 1, Math.floor(p * N * 0.999));
     layers.forEach((l, i) => { l.style.transform = `translateZ(${layerZ(i, p) + (i === idx ? (innerWidth <= 900 ? 18 : 30) : 0)}px)`; l.classList.toggle('on', i === idx); l.classList.toggle('seen', i < idx); });
     stack.style.transform = `rotateX(${58 - p * 4}deg) rotateZ(${-42 + p * 14}deg)`;
     if (idx !== archActive) {
