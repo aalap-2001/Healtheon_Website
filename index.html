@@ -874,6 +874,7 @@ a.card:hover,.card.hov:hover{transform:translateY(-6px);box-shadow:0 30px 60px -
 .foot-col button{display:block;font-size:15px;padding:5px 0;color:#C9D4E0;text-align:left}
 .foot-col button:hover{color:#fff}
 
+.media-credit{margin-top:clamp(40px,5vw,64px);font-size:12px;line-height:1.6;color:var(--fg-2);opacity:.75}
 .agent-frame{display:block;width:100%;height:780px;border:0;background:transparent;color-scheme:normal}
 
 /* Stats: every source link sits on the same baseline at the bottom of its column */
@@ -890,6 +891,8 @@ a[href^="http"]:not(.btn):hover{color:#1D4FA8 !important;text-decoration-color:c
 footer a[href^="http"]:not(.btn){color:#6E98EC !important;text-decoration-color:rgba(110,152,236,.45)}
 footer a[href^="http"]:not(.btn):hover{color:#9DBBF4 !important}
 .socials a[href^="http"]{text-decoration:none}
+.media-credit a[href^="http"]:not(.btn){color:inherit !important;text-decoration-color:currentColor}
+.media-credit a[href^="http"]:not(.btn):hover{color:var(--fg) !important}
 
 /* Gap between "Denied claims cost twice" and "How Healtheon moves revenue forward": 55px each side, 110px in total */
 .page[data-page="home"] .problem{padding-bottom:55px}
@@ -2214,6 +2217,7 @@ new ResizeObserver(post).observe(document.body);addEventListener(&#x27;load&#x27
         </div>
       </form>
     </div>
+    <p class="media-credit">Video and photography via <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a>: Ivan S (<a href="https://www.pexels.com/video/close-up-view-of-a-person-putting-down-his-stethoscope-while-using-a-laptop-5030431/" target="_blank" rel="noopener">video</a>, <a href="https://www.pexels.com/photo/a-group-of-people-having-a-meeting-in-the-office-8117476/" target="_blank" rel="noopener">photo</a>), <a href="https://www.pexels.com/photo/healthcare-professionals-in-hospital-corridor-31499386/" target="_blank" rel="noopener">Adarsh Mp</a>, <a href="https://www.pexels.com/photo/a-group-of-people-having-a-meeting-in-the-office-5945799/" target="_blank" rel="noopener">Theo Decker</a>, <a href="https://www.pexels.com/photo/photograph-of-a-paper-and-laptop-with-graphs-6248959/" target="_blank" rel="noopener">Kampus Production</a>, <a href="https://www.pexels.com/photo/a-patient-at-a-doctor-s-office-8460095/" target="_blank" rel="noopener">Los Muertos Crew</a></p>
   </div>
 </section>
 </div>
@@ -2287,7 +2291,6 @@ new ResizeObserver(post).observe(document.body);addEventListener(&#x27;load&#x27
     </div>
     <div class="foot-word" aria-hidden="true"><span>Healtheon</span></div>
     <p class="foot-tag"><span>Agentic AI. Built on trust.</span></p>
-    <p class="media-credit">Video and photography via <a href="https://www.pexels.com">Pexels</a>: <a href="https://www.pexels.com/@ivan-s/">Ivan S</a>, <a href="https://www.pexels.com/@adarsh-mp/">Adarsh Mp</a>, <a href="https://www.pexels.com/@theo-decker/">Theo Decker</a>, <a href="https://www.pexels.com/@kampus/">Kampus Production</a>, <a href="https://www.pexels.com/@cristian-rojas/">Los Muertos Crew</a></p>
     <div class="foot-bot">
       <span>© <span id="yr">2026</span> Healtheon. All rights reserved.</span>
       <nav aria-label="Legal"><a href="#/privacy">Privacy policy</a><a href="#/terms">Terms</a><a href="#/cookies">Cookie policy</a><a href="#" data-cookie-settings>Cookie settings</a></nav>
