@@ -852,14 +852,14 @@ a.card:hover,.card.hov:hover{transform:translateY(-6px);box-shadow:0 30px 60px -
 .pains span{font-size:13.5px;padding:7px 12px;border-radius:999px;background:var(--bg);border:1px solid var(--rule);color:var(--fg-2)}
 .sec-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
 .note{font-size:13px;color:var(--fg-2);margin-top:14px}
-.res-h{margin-bottom:clamp(28px,4vw,48px)}
-.res-sec{padding:clamp(64px,8vw,112px) 0}
-.res-list{padding:clamp(56px,7vw,96px) 0 0}
-.res-post{padding:clamp(56px,7vw,96px) 0 0}
-.res-talk{padding:clamp(64px,8vw,112px) 0 0}
-.res-talk p{color:var(--fg-2);margin-top:14px;max-width:56ch;font-size:18px}
-.res-talk .acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.res-list .card h3,.res-sec .card h3{font-size:clamp(19px,1.6vw,23px)}
+.rsc-h{margin-bottom:clamp(28px,4vw,48px)}
+.rsc-sec{padding:clamp(64px,8vw,112px) 0}
+.rsc-list{padding:clamp(56px,7vw,96px) 0 0}
+.rsc-post{padding:clamp(56px,7vw,96px) 0 0}
+.rsc-talk{padding:clamp(64px,8vw,112px) 0 0}
+.rsc-talk p{color:var(--fg-2);margin-top:14px;max-width:56ch;font-size:18px}
+.rsc-talk .acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.rsc-list .card h3,.rsc-sec .card h3{font-size:clamp(19px,1.6vw,23px)}
 .article{max-width:720px}
 .article p,.article li{color:var(--fg-2);font-size:18px;line-height:1.65}
 .article p+p{margin-top:18px}
@@ -2286,14 +2286,13 @@ new ResizeObserver(post).observe(document.body);addEventListener(&#x27;load&#x27
 <section class="phero" data-nav="dark">
   <div class="wrap">
     <div>
-      <p class="eyebrow">Blog</p>
       <h1>Notes from the team.</h1>
       <p class="lede">Short pieces on the choices behind the product: why models suggest and plain code decides, why autonomy is earned and why we left things out.</p>
     </div>
     <div class="phero-art" aria-hidden="true"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
   </div>
 </section>
-<section class="sec res-list">
+<section class="sec rsc-list">
   <div class="wrap">
     <div class="cards3">
       <a class="card hov reveal" href="#/blog-leibniz"><span class="n">6 minute read</span><h3>From the Leibniz dream to rules an agent can check</h3><p>Why we think logic belongs inside the model, not in the prompt.</p><span class="link">Read more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></a>
@@ -2308,14 +2307,13 @@ new ResizeObserver(post).observe(document.body);addEventListener(&#x27;load&#x27
 <section class="phero" data-nav="dark">
   <div class="wrap">
     <div>
-      <p class="eyebrow">Blog · 6 minute read</p>
       <h1>From the Leibniz dream to rules an agent can check</h1>
       <p class="lede">Why we think logic belongs inside the model, not in the prompt.</p>
     </div>
     <div class="phero-art" aria-hidden="true"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
   </div>
 </section>
-<section class="sec res-post">
+<section class="sec rsc-post">
   <div class="wrap">
     <article class="article">
       <p>In 1666 Gottfried Wilhelm Leibniz imagined a language precise enough that a dispute could be settled by calculation. For three and a half centuries that stayed a dream. Language models changed one half of the problem: machines can now read the messy world of documents, notes and records. They did not solve the other half, which is being right in a way you can prove.</p>
@@ -2336,14 +2334,13 @@ new ResizeObserver(post).observe(document.body);addEventListener(&#x27;load&#x27
 <section class="phero" data-nav="dark">
   <div class="wrap">
     <div>
-      <p class="eyebrow">Blog · 5 minute read</p>
       <h1>Why we start every customer in copilot mode</h1>
       <p class="lede">Trust is earned in steps, and the steps are worth designing.</p>
     </div>
     <div class="phero-art" aria-hidden="true"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
   </div>
 </section>
-<section class="sec res-post">
+<section class="sec rsc-post">
   <div class="wrap">
     <article class="article">
       <p>New hires do not get signing authority on day one. They watch, then they draft, then they act on small things while someone checks. ARIA onboards the same way.</p>
@@ -2362,14 +2359,13 @@ new ResizeObserver(post).observe(document.body);addEventListener(&#x27;load&#x27
 <section class="phero" data-nav="dark">
   <div class="wrap">
     <div>
-      <p class="eyebrow">Blog · 4 minute read</p>
       <h1>Why ARIA has no industry dropdowns</h1>
       <p class="lede">A product decision that sounds small and changed how we build.</p>
     </div>
     <div class="phero-art" aria-hidden="true"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
   </div>
 </section>
-<section class="sec res-post">
+<section class="sec rsc-post">
   <div class="wrap">
     <article class="article">
       <p>Most enterprise software asks you to pick your industry from a list on the first screen. We removed that list entirely.</p>
@@ -2388,14 +2384,13 @@ new ResizeObserver(post).observe(document.body);addEventListener(&#x27;load&#x27
 <section class="phero" data-nav="dark">
   <div class="wrap">
     <div>
-      <p class="eyebrow">Articles</p>
       <h1>Neuro-symbolic AI for operators.</h1>
       <p class="lede">Longer reads for the people who run regulated operations and have to sign off on what an AI system does.</p>
     </div>
     <div class="phero-art" aria-hidden="true"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
   </div>
 </section>
-<section class="sec res-list">
+<section class="sec rsc-list">
   <div class="wrap">
     <div class="cards3">
       <a class="card hov reveal" href="#/article-neuro-symbolic"><span class="n">9 minute read</span><h3>Neuro-symbolic AI, explained for operators</h3><p>What the term means, and why it matters in regulated work.</p><span class="link">Read more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></a>
@@ -2410,14 +2405,13 @@ new ResizeObserver(post).observe(document.body);addEventListener(&#x27;load&#x27
 <section class="phero" data-nav="dark">
   <div class="wrap">
     <div>
-      <p class="eyebrow">Article · 9 minute read</p>
       <h1>Neuro-symbolic AI, explained for operators</h1>
       <p class="lede">What the term means, and why it matters in regulated work.</p>
     </div>
     <div class="phero-art" aria-hidden="true"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
   </div>
 </section>
-<section class="sec res-post">
+<section class="sec rsc-post">
   <div class="wrap">
     <article class="article">
       <p>Neural networks are good at perception: reading a scanned form, summarising a call, spotting a pattern in a market. Symbolic systems are good at rules: if this, then that, every time. Neuro-symbolic AI combines the two so a system can read like a model and decide like a rulebook.</p>
@@ -2437,14 +2431,13 @@ new ResizeObserver(post).observe(document.body);addEventListener(&#x27;load&#x27
 <section class="phero" data-nav="dark">
   <div class="wrap">
     <div>
-      <p class="eyebrow">Article · 8 minute read</p>
       <h1>Learning why experts decide, not only what they do</h1>
       <p class="lede">Process mining and inverse reinforcement learning, in plain terms.</p>
     </div>
     <div class="phero-art" aria-hidden="true"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
   </div>
 </section>
-<section class="sec res-post">
+<section class="sec rsc-post">
   <div class="wrap">
     <article class="article">
       <p>Every enterprise system keeps an event log. Process mining reads those logs and rebuilds how work actually flows, including the path that most often ends well.</p>
@@ -2462,14 +2455,13 @@ new ResizeObserver(post).observe(document.body);addEventListener(&#x27;load&#x27
 <section class="phero" data-nav="dark">
   <div class="wrap">
     <div>
-      <p class="eyebrow">Article · 7 minute read</p>
       <h1>Federated by design: keeping data where it lives</h1>
       <p class="lede">How ARIA reads systems of record without copying them.</p>
     </div>
     <div class="phero-art" aria-hidden="true"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
   </div>
 </section>
-<section class="sec res-post">
+<section class="sec rsc-post">
   <div class="wrap">
     <article class="article">
       <p>Regulated data is hard to move, and for good reason. ARIA is built to leave it in place.</p>
@@ -2490,7 +2482,6 @@ new ResizeObserver(post).observe(document.body);addEventListener(&#x27;load&#x27
 <section class="phero" data-nav="dark">
   <div class="wrap">
     <div>
-      <p class="eyebrow">Security</p>
       <h1>Security and governance at ARIA.</h1>
       <p class="lede">Every control below can be checked in code or in a test, not only in a policy document. ARIA runs in your environment, every agent action can be traced to a decision_id, and a person stays accountable.</p>
       <div class="acts"><a href="#/contact/demo" class="btn btn-primary">Book a demo</a><a href="#/contact/demo" class="btn btn-ghost" data-topic="Security questionnaire">Contact our team</a></div>
@@ -2498,9 +2489,9 @@ new ResizeObserver(post).observe(document.body);addEventListener(&#x27;load&#x27
     <div class="phero-art" aria-hidden="true"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
   </div>
 </section>
-<section class="sec res-sec">
+<section class="sec rsc-sec">
   <div class="wrap">
-    <h2 class="h-m res-h">Data protection</h2>
+    <h2 class="h-m rsc-h">Data protection</h2>
     <div class="cards3">
       <div class="card reveal"><span class="ic" data-i="lock"></span><h3>Runs in your environment</h3><p>Client VPC, on-premise or air-gapped. Domain bundles import without network access.</p></div>
       <div class="card reveal r2"><span class="ic" data-i="lock"></span><h3>Tenant isolation at the row</h3><p>Forced row-level security; tenant and case are stamped on every transaction. No identity returns zero rows, not another client's data.</p></div>
@@ -2511,9 +2502,9 @@ new ResizeObserver(post).observe(document.body);addEventListener(&#x27;load&#x27
     </div>
   </div>
 </section>
-<section class="sec res-sec" style="background:var(--bg-2)">
+<section class="sec rsc-sec" style="background:var(--bg-2)">
   <div class="wrap">
-    <h2 class="h-m res-h">Governance principles</h2>
+    <h2 class="h-m rsc-h">Governance principles</h2>
     <div class="cards3">
       <div class="card reveal"><span class="ic" data-i="shield"></span><h3>Models suggest, plain code decides</h3><p>Permissions, row-level security, the Gate, hard rules, decision_ids, egress and bundle import contain no model.</p></div>
       <div class="card reveal r2"><span class="ic" data-i="shield"></span><h3>The agent is untrusted</h3><p>Agents receive only governed clients. They can request a tool or an action; they cannot reach a raw HTTP, database or model client.</p></div>
@@ -2525,9 +2516,9 @@ new ResizeObserver(post).observe(document.body);addEventListener(&#x27;load&#x27
     </div>
   </div>
 </section>
-<section class="sec res-sec">
+<section class="sec rsc-sec">
   <div class="wrap">
-    <h2 class="h-m res-h">Responsible technology practices</h2>
+    <h2 class="h-m rsc-h">Responsible technology practices</h2>
     <div class="cards3">
       <div class="card reveal"><span class="ic" data-i="scale"></span><h3>Defense in depth</h3><p>Six enforcement layers of plain code, each with a test. Input rails and a critic agent are on the roadmap as added defence.</p></div>
       <div class="card reveal r2"><span class="ic" data-i="scale"></span><h3>Explainable decisions</h3><p>Each verdict shows the facts, scores, thresholds and cited rule that produced it.</p></div>
@@ -2537,7 +2528,7 @@ new ResizeObserver(post).observe(document.body);addEventListener(&#x27;load&#x27
     </div>
   </div>
 </section>
-<section class="sec res-talk">
+<section class="sec rsc-talk">
   <div class="wrap">
     <h2 class="h-m">Talk to us about security</h2>
     <p>Send your questionnaire or ask for a walkthrough of our controls with the team that builds them.</p>
