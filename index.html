@@ -480,7 +480,7 @@ fieldset.f{border:0}
 
 /* Footer */
 footer{background:#06101A;color:#C9D4E0;padding:clamp(72px,9vw,120px) 0 32px;margin-top:clamp(88px,12vw,168px)}
-.foot-top{display:grid;grid-template-columns:1.4fr repeat(4,1fr);gap:32px}
+.foot-top{display:grid;grid-template-columns:1.4fr repeat(5,1fr);gap:32px}
 .foot-top .logo{color:#fff}
 .foot-top p{color:#8395A8;font-size:15px;margin-top:18px;max-width:34ch}
 .foot-col h5{font-family:var(--f-mono);font-size:13px;letter-spacing:0;color:#6F8296;font-weight:500;margin-bottom:18px}
@@ -852,6 +852,23 @@ a.card:hover,.card.hov:hover{transform:translateY(-6px);box-shadow:0 30px 60px -
 .pains span{font-size:13.5px;padding:7px 12px;border-radius:999px;background:var(--bg);border:1px solid var(--rule);color:var(--fg-2)}
 .sec-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
 .note{font-size:13px;color:var(--fg-2);margin-top:14px}
+.res-h{margin-bottom:clamp(28px,4vw,48px)}
+.res-sec{padding:clamp(64px,8vw,112px) 0}
+.res-list{padding:clamp(56px,7vw,96px) 0 0}
+.res-post{padding:clamp(56px,7vw,96px) 0 0}
+.res-talk{padding:clamp(64px,8vw,112px) 0 0}
+.res-talk p{color:var(--fg-2);margin-top:14px;max-width:56ch;font-size:18px}
+.res-talk .acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.res-list .card h3,.res-sec .card h3{font-size:clamp(19px,1.6vw,23px)}
+.article{max-width:720px}
+.article p,.article li{color:var(--fg-2);font-size:18px;line-height:1.65}
+.article p+p{margin-top:18px}
+.article h2{font-size:clamp(24px,2.4vw,32px);letter-spacing:-.03em;line-height:1.15;margin:48px 0 16px;color:var(--fg)}
+.article blockquote{margin:36px 0;padding:6px 0 6px 22px;border-left:3px solid var(--blue);font-size:clamp(22px,2.2vw,28px);font-weight:600;letter-spacing:-.02em;line-height:1.25;color:var(--fg)}
+.article ul{margin:8px 0 0;padding-left:20px;display:grid;gap:12px}
+.article li b{color:var(--fg)}
+.article-back{margin-top:56px !important}
+.article-back a{font-weight:600;color:var(--blue)}
 .legal{max-width:760px}
 .legal p{color:var(--fg-2);margin-top:18px;font-size:17px}
 .legal a{color:var(--blue);font-weight:600}
@@ -1001,6 +1018,14 @@ footer a[href^="http"]:not(.btn):hover{color:#9DBBF4 !important}
           <a href="#/founding-partners" role="menuitem"><span class="ic" data-i="handshake"></span><div><b>Founding partners</b><span>Shape Healtheon on real work</span></div></a>
         </div>
       </div>
+      <div class="nav-item">
+        <button class="nav-link" aria-expanded="false" aria-haspopup="true" data-group="resources">Resources <svg class="chev" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 3.5l3 3 3-3"/></svg></button>
+        <div class="dd" role="menu">
+          <a href="#/blog" role="menuitem"><span class="ic" data-i="scroll"></span><div><b>Blog</b><span>Notes from the team on building ARIA</span></div></a>
+          <a href="#/articles" role="menuitem"><span class="ic" data-i="file"></span><div><b>Articles</b><span>Longer reads on neuro-symbolic AI</span></div></a>
+          <a href="#/security" role="menuitem"><span class="ic" data-i="lock"></span><div><b>Security</b><span>How we protect data and decisions</span></div></a>
+        </div>
+      </div>
       <a class="nav-link" href="#/trust" data-navlink="trust">Trust</a>
       <a class="nav-link" href="#/contact" data-navlink="contact">About</a>
     </nav>
@@ -1014,6 +1039,7 @@ footer a[href^="http"]:not(.btn):hover{color:#9DBBF4 !important}
 <nav class="mmenu" id="mmenu" aria-label="Mobile">
   <details><summary>Platform</summary><div><a href="#/revenue-intelligence">Revenue Intelligence</a><a href="#/ai-teammates">AI Teammates</a><a href="#/browser-agents">Browser Agents</a><a href="#/aria">ARIA platform</a></div></details>
   <details><summary>Solutions</summary><div><a href="#/solutions">Our solution</a><a href="#/solutions/audiences">Who we serve</a><a href="#/case-studies">Case studies</a><a href="#/founding-partners">Founding partners</a></div></details>
+  <details><summary>Resources</summary><div><a href="#/blog">Blog</a><a href="#/articles">Articles</a><a href="#/security">Security</a></div></details>
   <a href="#/trust">Trust</a>
   <a href="#/contact">About</a>
   <a href="#/contact/demo" class="btn btn-primary">Book a demo</a>
@@ -2236,7 +2262,7 @@ new ResizeObserver(post).observe(document.body);addEventListener(&#x27;load&#x27
     <div>
       <h1>ARIA, the platform behind Healtheon.</h1>
       <p class="lede">Healtheon's AI coworkers run on ARIA, an agentic AI platform built on one principle: AI suggests, rules decide, people approve, and everything is recorded.</p>
-      <div class="acts"><a href="https://ariaccl.ai" target="_blank" rel="noopener" class="btn btn-primary">Visit ARIA</a><a href="#/solutions" class="btn btn-ghost">Back to our solution</a></div>
+      <div class="acts"><a href="https://ariax.ai/" target="_blank" rel="noopener" class="btn btn-primary">Visit ARIA</a><a href="#/solutions" class="btn btn-ghost">Back to our solution</a></div>
     </div>
     <div class="phero-art" aria-hidden="true"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
   </div>
@@ -2255,6 +2281,271 @@ new ResizeObserver(post).observe(document.body);addEventListener(&#x27;load&#x27
 </div>
 
 <!-- ================= LEGAL ================= -->
+<!-- ================= BLOG ================= -->
+<div class="page" data-page="blog">
+<section class="phero" data-nav="dark">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Blog</p>
+      <h1>Notes from the team.</h1>
+      <p class="lede">Short pieces on the choices behind the product: why models suggest and plain code decides, why autonomy is earned and why we left things out.</p>
+    </div>
+    <div class="phero-art" aria-hidden="true"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+  </div>
+</section>
+<section class="sec res-list">
+  <div class="wrap">
+    <div class="cards3">
+      <a class="card hov reveal" href="#/blog-leibniz"><span class="n">6 minute read</span><h3>From the Leibniz dream to rules an agent can check</h3><p>Why we think logic belongs inside the model, not in the prompt.</p><span class="link">Read more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></a>
+      <a class="card hov reveal r2" href="#/blog-steps"><span class="n">5 minute read</span><h3>Why we start every customer in copilot mode</h3><p>Trust is earned in steps, and the steps are worth designing.</p><span class="link">Read more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></a>
+      <a class="card hov reveal r3" href="#/blog-no-dropdowns"><span class="n">4 minute read</span><h3>Why ARIA has no industry dropdowns</h3><p>A product decision that sounds small and changed how we build.</p><span class="link">Read more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></a>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="page" data-page="blog-leibniz">
+<section class="phero" data-nav="dark">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Blog · 6 minute read</p>
+      <h1>From the Leibniz dream to rules an agent can check</h1>
+      <p class="lede">Why we think logic belongs inside the model, not in the prompt.</p>
+    </div>
+    <div class="phero-art" aria-hidden="true"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+  </div>
+</section>
+<section class="sec res-post">
+  <div class="wrap">
+    <article class="article">
+      <p>In 1666 Gottfried Wilhelm Leibniz imagined a language precise enough that a dispute could be settled by calculation. For three and a half centuries that stayed a dream. Language models changed one half of the problem: machines can now read the messy world of documents, notes and records. They did not solve the other half, which is being right in a way you can prove.</p>
+      <p>Regulated work needs both halves. A credit decision is not a matter of tone. A wash sale is not a style choice. When an agent drafts a loan decision or a trade, someone has to be able to say which rule allowed it.</p>
+      <h2>Rules as constraints, not suggestions</h2>
+      <p>Most agent systems put rules in the prompt and hope the model follows them. In ARIA, models suggest and plain code decides. Each rule is reviewed, versioned data with a citation, and a deterministic engine checks every proposed action against it. If the action fails, it stops, and the reason is recorded under a decision_id.</p>
+      <blockquote>Models suggest. Plain code decides.</blockquote>
+      <h2>What changes for the people involved</h2>
+      <p>Reviewers stop reading outputs line by line to look for violations. They read the rule trace instead. Auditors inspect the logic itself. When the policy changes, the rule changes, and the model does not need retraining.</p>
+      <p>That is the half of the Leibniz dream we work on every day.</p>
+      <p class="article-back"><a href="#/blog">← All blog posts</a></p>
+    </article>
+  </div>
+</section>
+</div>
+
+<div class="page" data-page="blog-steps">
+<section class="phero" data-nav="dark">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Blog · 5 minute read</p>
+      <h1>Why we start every customer in copilot mode</h1>
+      <p class="lede">Trust is earned in steps, and the steps are worth designing.</p>
+    </div>
+    <div class="phero-art" aria-hidden="true"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+  </div>
+</section>
+<section class="sec res-post">
+  <div class="wrap">
+    <article class="article">
+      <p>New hires do not get signing authority on day one. They watch, then they draft, then they act on small things while someone checks. ARIA onboards the same way.</p>
+      <h2>Four steps</h2>
+      <ul><li><b>Shadow.</b> The agent observes and drafts. No decision_id is minted, so nothing leaves.</li><li><b>Copilot.</b> It runs low-risk actions and proposes the rest. A person approves each high-risk action.</li><li><b>Autopilot.</b> It acts without per-action approval only when the Gate checks pass, the hard rules return VALID, its certification card permits it and the Sentinel mints a decision_id.</li><li><b>Outcome ownership.</b> It owns an outcome and escalates the edge cases.</li></ul>
+      <h2>What moves an agent up a step</h2>
+      <p>Not a calendar. An agent earns autonomy on a task when its record shows it: the share of proposals approved without change, the share of logic checks passed, and the cases it escalated correctly. Each of those is visible in the Command Centre.</p>
+      <p>The boundary never moves by itself, and it is enforced by the Governance Sentinel, not by the agent. A person widens it, one action type at a time, through a reviewed change to the agent's certification card.</p>
+      <p class="article-back"><a href="#/blog">← All blog posts</a></p>
+    </article>
+  </div>
+</section>
+</div>
+
+<div class="page" data-page="blog-no-dropdowns">
+<section class="phero" data-nav="dark">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Blog · 4 minute read</p>
+      <h1>Why ARIA has no industry dropdowns</h1>
+      <p class="lede">A product decision that sounds small and changed how we build.</p>
+    </div>
+    <div class="phero-art" aria-hidden="true"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+  </div>
+</section>
+<section class="sec res-post">
+  <div class="wrap">
+    <article class="article">
+      <p>Most enterprise software asks you to pick your industry from a list on the first screen. We removed that list entirely.</p>
+      <p>Businesses rarely fit one box. A dental group is also a billing operation, an employer and a landlord. A list forces a choice, and the choice quietly decides which rules you get.</p>
+      <h2>What we do instead</h2>
+      <p>You describe your product, upload documents and connect data. ARIA reads them, works out what kind of business you are, and proposes an agent team with rules and their sources. A person reviews every proposal before it is published.</p>
+      <p>It is more work for us. It is less guessing for you.</p>
+      <p class="article-back"><a href="#/blog">← All blog posts</a></p>
+    </article>
+  </div>
+</section>
+</div>
+
+<!-- ================= ARTICLES ================= -->
+<div class="page" data-page="articles">
+<section class="phero" data-nav="dark">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Articles</p>
+      <h1>Neuro-symbolic AI for operators.</h1>
+      <p class="lede">Longer reads for the people who run regulated operations and have to sign off on what an AI system does.</p>
+    </div>
+    <div class="phero-art" aria-hidden="true"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+  </div>
+</section>
+<section class="sec res-list">
+  <div class="wrap">
+    <div class="cards3">
+      <a class="card hov reveal" href="#/article-neuro-symbolic"><span class="n">9 minute read</span><h3>Neuro-symbolic AI, explained for operators</h3><p>What the term means, and why it matters in regulated work.</p><span class="link">Read more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></a>
+      <a class="card hov reveal r2" href="#/article-process"><span class="n">8 minute read</span><h3>Learning why experts decide, not only what they do</h3><p>Process mining and inverse reinforcement learning, in plain terms.</p><span class="link">Read more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></a>
+      <a class="card hov reveal r3" href="#/article-federated"><span class="n">7 minute read</span><h3>Federated by design: keeping data where it lives</h3><p>How ARIA reads systems of record without copying them.</p><span class="link">Read more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></a>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="page" data-page="article-neuro-symbolic">
+<section class="phero" data-nav="dark">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Article · 9 minute read</p>
+      <h1>Neuro-symbolic AI, explained for operators</h1>
+      <p class="lede">What the term means, and why it matters in regulated work.</p>
+    </div>
+    <div class="phero-art" aria-hidden="true"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+  </div>
+</section>
+<section class="sec res-post">
+  <div class="wrap">
+    <article class="article">
+      <p>Neural networks are good at perception: reading a scanned form, summarising a call, spotting a pattern in a market. Symbolic systems are good at rules: if this, then that, every time. Neuro-symbolic AI combines the two so a system can read like a model and decide like a rulebook.</p>
+      <h2>The grey box</h2>
+      <p>A pure neural model is a black box: you see what it did, not why. ARIA's engine, Verax, runs five stages and only the first uses a model: it extracts facts from documents, each with a confidence. Soft rules score those facts, a versioned Gate turns each score into true, false or insufficient evidence, and deterministic hard rules with citations return the verdict. Model output never reaches the rules directly. We call the result a grey box: you can inspect every fact, score, threshold and rule behind each decision.</p>
+      <h2>Memory with proof</h2>
+      <p>Rules are not enough without context. The Knowledge Fabric keeps four tiers of memory, working, episodic, semantic and procedural, and every fact carries its source and four dates, so a past decision can be replayed exactly as the system knew it then.</p>
+      <h2>What operators should ask a vendor</h2>
+      <ul><li>Can you show me the rule that allowed this decision?</li><li>What happens when the rule changes?</li><li>Where does my data live while the agent reads it?</li><li>Who approved this action, and where is that recorded?</li></ul>
+      <p class="article-back"><a href="#/articles">← All articles</a></p>
+    </article>
+  </div>
+</section>
+</div>
+
+<div class="page" data-page="article-process">
+<section class="phero" data-nav="dark">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Article · 8 minute read</p>
+      <h1>Learning why experts decide, not only what they do</h1>
+      <p class="lede">Process mining and inverse reinforcement learning, in plain terms.</p>
+    </div>
+    <div class="phero-art" aria-hidden="true"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+  </div>
+</section>
+<section class="sec res-post">
+  <div class="wrap">
+    <article class="article">
+      <p>Every enterprise system keeps an event log. Process mining reads those logs and rebuilds how work actually flows, including the path that most often ends well.</p>
+      <p>That shows what experts do. It does not show why. Inverse reinforcement learning works backwards from expert choices to estimate the goal behind them: the trade-offs a senior underwriter or leasing agent makes without writing them down.</p>
+      <h2>From insight to agent steps</h2>
+      <p>The improved process becomes a workflow the Swarm Orchestrator can run, with human checkpoints where your rules ask for them. Each suggested change waits for a person to approve it. Approved changes are applied and logged.</p>
+      <p>The effect is an agent team that moves from following orders to pursuing objectives, inside limits you set.</p>
+      <p class="article-back"><a href="#/articles">← All articles</a></p>
+    </article>
+  </div>
+</section>
+</div>
+
+<div class="page" data-page="article-federated">
+<section class="phero" data-nav="dark">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Article · 7 minute read</p>
+      <h1>Federated by design: keeping data where it lives</h1>
+      <p class="lede">How ARIA reads systems of record without copying them.</p>
+    </div>
+    <div class="phero-art" aria-hidden="true"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+  </div>
+</section>
+<section class="sec res-post">
+  <div class="wrap">
+    <article class="article">
+      <p>Regulated data is hard to move, and for good reason. ARIA is built to leave it in place.</p>
+      <h2>Governed connectors</h2>
+      <p>Each connector is declared in the domain bundle with a pointer to a Vault secret. Credentials resolve at use time, connection pools open inside the calling service, and there is no central proxy that every tenant's traffic passes through. Agents see permitted connectors as MCP or LangChain tools, and every read is logged with its decision_id.</p>
+      <h2>In context, at inference time</h2>
+      <p>Agents read what they need at the moment they need it, inside your VPC, on-premise or air-gapped. Tenant data is isolated at the database row, and sensitive data is stripped before any model call. That keeps compliance a property of the architecture rather than a promise in a policy.</p>
+      <h2>Lower cost for every new deployment</h2>
+      <p>Because the core is shared and the data stays put, a new domain is a new bundle, not new code. Each new customer and industry starts from a working platform instead of a blank one.</p>
+      <p class="article-back"><a href="#/articles">← All articles</a></p>
+    </article>
+  </div>
+</section>
+</div>
+
+<!-- ================= SECURITY ================= -->
+<div class="page" data-page="security">
+<section class="phero" data-nav="dark">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Security</p>
+      <h1>Security and governance at ARIA.</h1>
+      <p class="lede">Every control below can be checked in code or in a test, not only in a policy document. ARIA runs in your environment, every agent action can be traced to a decision_id, and a person stays accountable.</p>
+      <div class="acts"><a href="#/contact/demo" class="btn btn-primary">Book a demo</a><a href="#/contact/demo" class="btn btn-ghost" data-topic="Security questionnaire">Contact our team</a></div>
+    </div>
+    <div class="phero-art" aria-hidden="true"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+  </div>
+</section>
+<section class="sec res-sec">
+  <div class="wrap">
+    <h2 class="h-m res-h">Data protection</h2>
+    <div class="cards3">
+      <div class="card reveal"><span class="ic" data-i="lock"></span><h3>Runs in your environment</h3><p>Client VPC, on-premise or air-gapped. Domain bundles import without network access.</p></div>
+      <div class="card reveal r2"><span class="ic" data-i="lock"></span><h3>Tenant isolation at the row</h3><p>Forced row-level security; tenant and case are stamped on every transaction. No identity returns zero rows, not another client's data.</p></div>
+      <div class="card reveal r3"><span class="ic" data-i="lock"></span><h3>Sensitive data stripped before every model call</h3><p>One Model Gateway is the only route to a model. Names, dates and identifiers reach it as placeholders. No raw model client exists in the codebase.</p></div>
+      <div class="card reveal"><span class="ic" data-i="lock"></span><h3>Customer data used in context</h3><p>Your data is used in context at inference time, inside your environment.</p></div>
+      <div class="card reveal r2"><span class="ic" data-i="lock"></span><h3>Credentials only in Vault</h3><p>Bundles and the connector registry hold references only. Secrets resolve at use time.</p></div>
+      <div class="card reveal r3"><span class="ic" data-i="lock"></span><h3>Erasure by key</h3><p>Each data subject has a key in Vault; destroying it after retention makes the text unreadable while receipts remain.</p></div>
+    </div>
+  </div>
+</section>
+<section class="sec res-sec" style="background:var(--bg-2)">
+  <div class="wrap">
+    <h2 class="h-m res-h">Governance principles</h2>
+    <div class="cards3">
+      <div class="card reveal"><span class="ic" data-i="shield"></span><h3>Models suggest, plain code decides</h3><p>Permissions, row-level security, the Gate, hard rules, decision_ids, egress and bundle import contain no model.</p></div>
+      <div class="card reveal r2"><span class="ic" data-i="shield"></span><h3>The agent is untrusted</h3><p>Agents receive only governed clients. They can request a tool or an action; they cannot reach a raw HTTP, database or model client.</p></div>
+      <div class="card reveal r3"><span class="ic" data-i="shield"></span><h3>Governed egress</h3><p>No high-risk action leaves without a decision_id minted by the Governance Sentinel.</p></div>
+      <div class="card reveal"><span class="ic" data-i="shield"></span><h3>Replayable decisions</h3><p>Every decision is stored with its facts, scores, thresholds, cited rules and bundle version, in an append-only ledger keyed by decision_id.</p></div>
+      <div class="card reveal r2"><span class="ic" data-i="shield"></span><h3>Rules changed only by review</h3><p>Rules move through a lifecycle that needs more than one role from Draft to Production. Bundles are hash-checked.</p></div>
+      <div class="card reveal r3"><span class="ic" data-i="shield"></span><h3>A kill switch</h3><p>An operator can stop all new decision_ids at once. Nothing high-risk can leave; agents can still read and draft.</p></div>
+      <div class="card reveal"><span class="ic" data-i="shield"></span><h3>A watchdog</h3><p>What was sent is reconciled against what was approved. Any mismatch is raised as an incident.</p></div>
+    </div>
+  </div>
+</section>
+<section class="sec res-sec">
+  <div class="wrap">
+    <h2 class="h-m res-h">Responsible technology practices</h2>
+    <div class="cards3">
+      <div class="card reveal"><span class="ic" data-i="scale"></span><h3>Defense in depth</h3><p>Six enforcement layers of plain code, each with a test. Input rails and a critic agent are on the roadmap as added defence.</p></div>
+      <div class="card reveal r2"><span class="ic" data-i="scale"></span><h3>Explainable decisions</h3><p>Each verdict shows the facts, scores, thresholds and cited rule that produced it.</p></div>
+      <div class="card reveal r3"><span class="ic" data-i="scale"></span><h3>People stay accountable</h3><p>Every approval names the person who gave it.</p></div>
+      <div class="card reveal"><span class="ic" data-i="scale"></span><h3>Compliance programmes</h3><p>Controls are designed to support HIPAA, SOC 2 and GDPR programmes and the NIST AI Risk Management Framework. Compliance is attested per deployment.</p></div>
+      <div class="card reveal r2"><span class="ic" data-i="scale"></span><h3>Report a concern</h3><p>Write to us through the contact form and we will route it to the security team.</p></div>
+    </div>
+  </div>
+</section>
+<section class="sec res-talk">
+  <div class="wrap">
+    <h2 class="h-m">Talk to us about security</h2>
+    <p>Send your questionnaire or ask for a walkthrough of our controls with the team that builds them.</p>
+    <div class="acts"><a href="#/contact/demo" class="btn btn-primary" data-topic="Security questionnaire">Contact our team</a></div>
+  </div>
+</section>
+</div>
+
 <div class="page" data-page="cookies"><section class="sec" style="padding-top:clamp(140px,16vw,200px)"><div class="wrap legal"><h1 class="h-l">Cookie policy</h1><p>This site uses strictly necessary storage to remember your cookie choice and display preferences. Analytics and marketing cookies are only used if you allow them. You can change your choice at any time.</p><p><button class="btn btn-ghost btn-sm" data-cookie-settings>Open cookie settings</button></p><p>The full cookie policy will be published here. For questions, email <a href="mailto:contact@healtheon.ai">contact@healtheon.ai</a>.</p></div></section></div>
 <div class="page" data-page="privacy"><section class="sec" style="padding-top:clamp(140px,16vw,200px)"><div class="wrap legal"><h1 class="h-l">Privacy policy</h1><p>This page will hold Healtheon's Privacy policy. For questions in the meantime, email <a href="mailto:contact@healtheon.ai">contact@healtheon.ai</a>.</p></div></section></div>
 <div class="page" data-page="terms"><section class="sec" style="padding-top:clamp(140px,16vw,200px)"><div class="wrap legal"><h1 class="h-l">Terms of use</h1><p>This page will hold Healtheon's Terms of use. For questions in the meantime, email <a href="mailto:contact@healtheon.ai">contact@healtheon.ai</a>.</p></div></section></div>
@@ -2291,8 +2582,9 @@ new ResizeObserver(post).observe(document.body);addEventListener(&#x27;load&#x27
           <a href="mailto:contact@healtheon.ai" aria-label="Email Healtheon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
         </div>
       </div>
-      <div class="foot-col"><h5>Platform</h5><a href="#/revenue-intelligence">Revenue Intelligence</a><a href="#/ai-teammates">AI Teammates</a><a href="#/browser-agents">Browser Agents</a><a href="#/trust">Trust and control</a><a href="https://ariaccl.ai" target="_blank" rel="noopener">Platform (ARIA)</a></div>
+      <div class="foot-col"><h5>Platform</h5><a href="#/revenue-intelligence">Revenue Intelligence</a><a href="#/ai-teammates">AI Teammates</a><a href="#/browser-agents">Browser Agents</a><a href="#/trust">Trust and control</a><a href="https://ariax.ai/" target="_blank" rel="noopener">Platform (ARIA)</a></div>
       <div class="foot-col"><h5>Solutions</h5><a href="#/solutions">Our solution</a><a href="#/solutions/audiences">Who we serve</a><a href="#/case-studies">Case studies</a><a href="#/founding-partners">Founding partners</a></div>
+      <div class="foot-col"><h5>Resources</h5><a href="#/blog">Blog</a><a href="#/articles">Articles</a><a href="#/security">Security</a></div>
       <div class="foot-col"><h5>Company</h5><a href="#/contact">About</a><a href="#/contact/demo">Contact</a><a href="#/contact/demo">Book a demo</a></div>
       <div class="foot-col"><h5>Get in touch</h5><a href="mailto:contact@healtheon.ai">contact@healtheon.ai</a><a href="https://www.linkedin.com/company/healtheonai/" target="_blank" rel="noopener">LinkedIn</a><a href="https://x.com/healtheonai" target="_blank" rel="noopener">X (Formerly Twitter)</a></div>
     </div>
@@ -2361,7 +2653,7 @@ window.__AV={"eva": {"po": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2
   const CONFIG = {
     FORM_ENDPOINT: "",          // demo requests: JSON POST
     CASE_STUDY_ENDPOINT: "",    // case study PDF requests: JSON POST
-    ARIA_URL: "https://ariaccl.ai",
+    ARIA_URL: "https://ariax.ai/",
     LINKEDIN_URL: "https://www.linkedin.com/company/healtheonai/",
     X_URL: "https://x.com/healtheonai"
   };
@@ -2535,6 +2827,15 @@ window.__AV={"eva": {"po": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2
     "ai-teammates": { title: "AI teammates for revenue cycle management | Healtheon.ai", desc: "Meet Healtheon's six AI teammates for eligibility, prior authorization, coding, claims, payment reconciliation, and denials and appeals.", cta: "Six teammates, one case, 45 minutes. Book the walkthrough.", btn: "See Healtheon in action", hide2: true, nav: "platform" },
     "contact": { title: "About Healtheon and book a demo | Healtheon.ai", desc: "Learn about Healtheon's approach to agentic AI in healthcare revenue cycle management, and request a demo.", noCta: true, nav: "contact" },
     "aria": { title: "ARIA, the platform behind Healtheon | Healtheon.ai", desc: "Healtheon's AI coworkers run on ARIA: AI suggests, rules decide, people approve, and everything is recorded.", cta: "Find the pattern. Put a teammate on it.", btn: "Book a demo", nav: "platform" },
+    "blog": { title: "Blog: notes from the team | Healtheon.ai", desc: "Short pieces on the choices behind the product: why models suggest and plain code decides, why autonomy is earned and why we left things out.", cta: "Find the pattern. Put a teammate on it.", btn: "Book a demo", nav: "resources" },
+    "articles": { title: "Articles: neuro-symbolic AI for operators | Healtheon.ai", desc: "Longer reads for the people who run regulated operations and have to sign off on what an AI system does.", cta: "Find the pattern. Put a teammate on it.", btn: "Book a demo", nav: "resources" },
+    "security": { title: "Security and governance | Healtheon.ai", desc: "How ARIA keeps customer data in place, controls access, records every agent decision and applies responsible technology practices.", cta: "Find the pattern. Put a teammate on it.", btn: "Book a demo", nav: "resources" },
+    "blog-leibniz": { title: "From the Leibniz dream to rules an agent can check | Healtheon.ai", desc: "Why we think logic belongs inside the model, not in the prompt.", cta: "Find the pattern. Put a teammate on it.", btn: "Book a demo", nav: "resources" },
+    "blog-steps": { title: "Why we start every customer in copilot mode | Healtheon.ai", desc: "Trust is earned in steps, and the steps are worth designing.", cta: "Find the pattern. Put a teammate on it.", btn: "Book a demo", nav: "resources" },
+    "blog-no-dropdowns": { title: "Why ARIA has no industry dropdowns | Healtheon.ai", desc: "A product decision that sounds small and changed how we build.", cta: "Find the pattern. Put a teammate on it.", btn: "Book a demo", nav: "resources" },
+    "article-neuro-symbolic": { title: "Neuro-symbolic AI, explained for operators | Healtheon.ai", desc: "What the term means, and why it matters in regulated work.", cta: "Find the pattern. Put a teammate on it.", btn: "Book a demo", nav: "resources" },
+    "article-process": { title: "Learning why experts decide, not only what they do | Healtheon.ai", desc: "Process mining and inverse reinforcement learning, in plain terms.", cta: "Find the pattern. Put a teammate on it.", btn: "Book a demo", nav: "resources" },
+    "article-federated": { title: "Federated by design: keeping data where it lives | Healtheon.ai", desc: "How ARIA reads systems of record without copying them.", cta: "Find the pattern. Put a teammate on it.", btn: "Book a demo", nav: "resources" },
     "cookies": { title: "Cookie policy | Healtheon.ai", desc: "How Healtheon.ai uses cookies and how to change your choices.", noCta: true },
     "privacy": { title: "Privacy policy | Healtheon.ai", desc: "Healtheon Privacy policy.", noCta: true },
     "terms": { title: "Terms of use | Healtheon.ai", desc: "Healtheon Terms of use.", noCta: true }
